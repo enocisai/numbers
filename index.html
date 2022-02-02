@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html lang="es">
 
+
 <head>
     <meta charset="utf-8" />
     <title>HTML</title>
@@ -22,6 +23,8 @@
         count1++;
         document.getElementById("number").innerHTML = count1;
     } </script>
+
+
     <style>
     * {
         margin: 0;
@@ -29,7 +32,7 @@
     }
     body{
         position: relative;
-        background-color: pink;
+        transition: background-color ease-in-out 1s; 
     }
     .container {
         
@@ -46,7 +49,7 @@
         font-family: Roboto,sans-serif;
         font-size: 200px;
         animation: pulse 1.5% infinite;
-    
+        
     }
   
     button {
@@ -73,22 +76,26 @@
         }
         
     }
-    
+  
 
     </style>
 </head>
 
 <body>
+
     
     <div class="container">
         <div class="container_text">
-            
+           
             <h1 id="number">0</h1>
+            
             <button type="button" onclick="incrementButton()" >INCREASE</button>
             <button type="button" onclick="pauseButton()"> PAUSE</button>
             <button type="button" onclick="decreaseButton()" > DECREASE</button>
-            
+        
+          
         </div>
+        
         </div>
 </body>
 
